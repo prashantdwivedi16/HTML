@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inox</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        function BookClick(){
+            document.getElementById("btnContainer").style.display = "none";
+            document.getElementById("summaryContainer").style.display = "block";
+
+            document.getElementById("lblMovie").textContent = document.getElementById("lstMovie").value;
+
+            document.getElementById("lblDate").textContent = document.getElementById("lstDate").value;
+            
+            document.getElementById("lblCinema").textContent = document.getElementById("lstCinema").value;
+            document.getElementById("lblTime").textContent = document.getElementById("lstTime").value;
+
+            if(document.getElementById("lstMovie").value=="MOANA 2"){
+                document.getElementById("imgPoster").src = "./img/moana-2.jpg";
+            } else {
+                document.getElementById("imgPoster").src = "./img/pushpa-2.jpg";
+            }
+        }
+
+        function ModifyClick(){
+            document.getElementById("bookingHeading").innerHTML = "Modify Booking";
+            document.getElementById("btnBook").innerHTML = "Save";
+            document.getElementById("btnBook").className = "btn btn-success";
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <div id="btnContainer">
+        <button class="btn btn-primary mt-3" data-bs-target="#booking" data-bs-toggle="modal">Quick Book</button>
+    </div>
+    <div class="modal fade" id="booking">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="bookingHeading">Quick Booking</h3>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-between">
+                        <div>
+                            <select class="form-select w-100" id="lstMovie">
+                                <option>Select Movie</option>
+                                <option>PUSHPA (THE RULE PART-2)</option>
+                                <option>MOANA 2</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-select w-100" id="lstDate">
+                                <option>Select Date</option>
+                                <option>Tomorrow,</option>
+                                <option>Fri, 6 Dec</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-select w-100" id="lstCinema">
+                                <option>Select Cinema</option>
+                                <option>INOX B'Hills</option>
+                                <option>PVR Ameerpet</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-select w-100" id="lstTime">
+                                <option>Select Timing</option>
+                                <option>01:20 PM</option>
+                                <option>10:40 PM</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button id="btnBook" onclick="BookClick()" data-bs-dismiss="modal" class="btn btn-info w-100">Book</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-25 mt-4" style="display: none;" id="summaryContainer">
+        <h4 class="bg-dark text-white p-2">Booking Summary</h4>
+        <img width="100%" height="200" id="imgPoster">
+        <dl>
+            <dt>Movie</dt>
+            <dd id="lblMovie"></dd>
+            <dt>Date</dt>
+            <dd id="lblDate"></dd>
+            <dt>Cinema</dt>
+            <dd id="lblCinema"></dd>
+            <dt>Time</dt>
+            <dd id="lblTime"></dd>
+        </dl>
+        <button onclick="ModifyClick()" data-bs-target="#booking" data-bs-toggle="modal" class="btn btn-warning w-100">Modify Booking</button>
+    </div>
+</body>
+</html>
