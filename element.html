@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var Categories = ["All","Electronics","Fashion","FootWear","Offers","Premium"];
+        function bodyload(){
+     Categories.map(function(Category){
+                var option = document.createElement("option");
+                var li = document.createElement("li");
+
+                option.text = Category;
+                option.value = Category;
+
+                li.innerHTML = Category;
+
+                document.querySelector("select").appendChild(option);
+                document.querySelector("ol").appendChild(li);
+
+                var link = document.createElement("a");
+                link.href = `${Category}.html`;
+                link.innerHTML = Category;
+                
+                document.querySelector("nav").appendChild(link);
+
+                var ul_li = document.createElement("li");
+                var input = document.createElement("input");
+
+                input.type = "checkbox";
+                input.value = Category;
+
+
+                var label = document.createElement("label");
+                label.innerHTML = Category;
+
+
+                ul_li.appendChild(input);
+                ul_li.appendChild(label);
+
+                document.querySelector("ul").appendChild(ul_li);
+
+                 })
+        }
+    </script>
+    <style>
+        nav a{
+            margin-right: 100px;
+        }
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body onload="bodyload()">
+    <h2>Choose a Category</h2>
+    <select>
+
+    </select>
+    <h2>Category list</h2>
+    <ol>
+
+    </ol>
+    <h2>Shopper.</h2>
+    <nav>
+
+    </nav>
+    <h2>Select Categories</h2>
+    <ul>
+
+    </ul>   
+</body>
+</html>
