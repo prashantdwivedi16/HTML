@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>YOUTUBE-CHANNEL</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+            font-size: 16px;
+            font-family: arial;
+        }
+        .youtube-logo{
+            width: 110px;
+            margin-left: 20px;
+        }
+        .bi-list{
+            font-size: 25px;
+            margin-right: 10px;
+            margin-left: 12px;
+        }
+        .search-bar{
+            border: 1px solid gray;
+            padding: 10px;
+            width: 500px;
+            color: gray;
+            display: inline-block;
+            border-radius: 20px;
+        }
+        .bi-search{
+            float: right;
+        }
+        .bi-mic-fill{
+            margin-left: 15px;
+            font-size: 20px;
+        }
+        .bi-three-dots-vertical{
+            font-size: 20px;
+            margin-right: 15px;
+        }
+        .bi-person-circle{
+            margin-right: 5px;
+            font-size: 20px;
+        }
+        .btn-signin{
+            font-size: 15px;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 8px;
+            border-radius: 30px;
+            
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+        }
+        .banner{
+            border-radius: 15px;
+            margin-top: 10px;
+            
+        }     
+        .nav-item{
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 30px;
+            margin-left: -80px;
+            text-align: center;
+        }  
+        .nav-text{
+            font-size: 13px;
+        } 
+        article{
+            margin-top: 30px;
+            display: flex;
+            
+            font-family: arial;
+        }
+        .powerkids-logo{
+            width: 98%;
+            border-radius: 100%;
+        }
+        .artical-title{
+            font-size: 35px;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .artical-subtitle{
+            font-size: 13px;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: gray;
+        }
+        .summary{
+            margin-left: 10px;
+            margin-top: 10px;
+            color: gray;
+        }
+        .link{
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .subscribe{
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .join{
+            background-color: blue;
+            margin-left: 10px;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .channel-menu{
+            margin-top: 30px;
+            font-family: 20px;
+            font-style: arial;
+        }
+        .channel-menu span{
+            margin-right: 30px;
+        }
+        .channel-menu span:first-child{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .channel-menu span:last-child{
+            margin-right: 670px;
+        }
+        .promotion{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-gap: 20px;
+        }
+        .promotion-video{
+            margin-top: 10px;
+            width: 100%;
+            height: 400px;
+            
+        }
+        .video{
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+        main{
+            height: 500px;
+            overflow: auto;
+        }
+        .playlist{
+            display: flex;
+        }
+        .playlist iframe{
+            width: 190px;
+            margin-top: 25px;
+            margin-right: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+    <div>
+        <span class="bi bi-list"></span>
+        <img src="./img/youtube-logo.png" align="right" class="youtube-logo">
+    </div>
+    <div>
+        <span class="search-bar">Search
+        <span class="bi bi-search"></span>
+        </span>
+        <span class="bi bi-mic-fill"></span>
+    </div>
+    <div>
+        <span class="bi bi-three-dots-vertical"></span>
+        <span class="btn-signin"><span class="bi bi-person-circle"></span>Sign in
+    </span>
+    </div>
+    </header>
+    <section>
+        <nav>
+            <div class="nav-item">
+                <span class="bi bi-house-door"></span>
+                <div class="nav-text">Home</div>
+            </div>
+            <div class="nav-item">
+                <span class="bi bi-film"></span>
+                <div class="nav-text">Videos</div>
+            </div>
+            <div class="nav-item">
+                <span class="bi bi-person-circle"></span>
+                <div class="nav-text">You</div>
+            </div>
+            <div class="nav-item">
+                <span class="bi bi-clock-history"></span>
+                <div class="nav-text">History</div>
+            </div>
+            <div></div>
+        </nav>
+        <main>
+            <img class="banner" src="./img/youtubebanner.jpg" width="95%">
+            <article>
+                <div>
+                    <img src="./img/channels-profile.jpg" class="powerkids-logo">
+                </div>
+                <div>
+                <div class="artical-title">PowerKids TV</div>
+                <div class="artical-subtitle">@PowerKidstv • 43.3M subscribers • 8.4K videos</div>
+                <div class="summary">Subscribe now at www.youtube.com/powerkids?sub_confirmation1 </div>
+                <div class="link"><a href="powerkids.net">powerkids.net</a>
+                    and 4 more links</div>
+                    <br>
+                    <div >
+                        <span class="subscribe">
+                            <span class="bi bi-bell-fill">Subscribe</span>
+                        </span>
+                        <span class="join">
+                            <span>Join</span>
+                        </span>
+                    </div>
+            </div>
+            </article>
+            <div class="channel-menu">
+                <span>Home</span>
+                <span>Videos</span>
+                <span>Short</span>
+                <span>Live</span>
+                <span>Playlist</span>
+                <span>Post</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <div class="promotion">
+                <div>
+                    <iframe class="promotion-video" src="https://www.youtube.com/embed/K4-CGJR5_gA"></iframe>
+                </div> <div> 
+               <p>🌳🐅The Jungle Book Season 4 Official Trailer 2 | Mowgli's new stories and stories |Friendship, Enmity, Love,Cheating The Jungle Book Season 4 Official Trailer 2 | Mowgli's new stories and stories | Friendship, Enmity, Love, Cheating</p>
+                <p>The Jungle Book Season 4 Official Trailer 2 | Mowgli's new stories and stories | Friendship, Enmity, Love, Cheating</p><p style="color: gray;">Powerkids world<br>231,526 views
+                    . 4 years ago</p>
+            </div>
+            </div>
+            <div>
+                <div class="video">Videos</div>
+                <div class="playlist">
+                    <div>
+                <iframe src="https://www.youtube.com/embed/9hk3HRkkeB8"></iframe>
+                <div>JUNGLE BOOK STORY | KIDS ANIMATED STORY | ANIMATED GUY<p style="color: gray;">Powerkids world<br>2 year ago</p></div>
+            </div>
+            <div>
+            <iframe src="https://www.youtube.com/embed/BTHECfRojow"></iframe>
+            <div>The jungle book Mega Episode | Powerkids World<p style="color: gray;">Powerkids world<br>522K views, 1 year ago</p></div>
+        </div>
+       <div>
+            <iframe src="https://www.youtube.com/embed/Al-hwD_NCk4"></iframe>
+            <div>Jungle Book | Hindi Kahaniya | Mega Episode | Animation Cartoon |<p style="color: gray;">Powerkids world<br>3.3M views</p></div>
+        </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/G63Fs988Qgc"></iframe>
+            <div class="discription">JUNGLE BOOK STORY | KIDS ANIMATED STORY | ANIMATED GUY<p style="color: gray;">PowerKids World<br>1.8M views, 4 year ago</p></div>
+        </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/I3qQestBdDI"></iframe>
+            <div class="discription">|Jungle Book Mega Episode | Jungle Book Cartoon For Kids | Funny English Stories|<p style="color: gray;">Powerkids world<br>2.4M views, 10 month ago</p></div>
+        </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
