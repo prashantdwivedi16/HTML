@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            text-align: center;
+            font-family: poppin;
+        }
+
+        .accordion {
+
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             height: 400px;
+             gap: 20px;
+             transition: 0.3s;
+
+        }
+
+        .accordion li {
+
+             position: relative;
+             overflow: hidden;
+             flex: 0 0 80px;
+             border-radius: 50px;
+             opacity: 0.10%;
+             cursor: pointer;
+
+        }
+
+        .accordion li img {
+
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             translate: -50% -50%;
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             filter: grayscale(0.2);
+
+        }
+
+        .accordion li ,
+        .accordion li img,
+        .accordion li .content,
+        .accordion li .content span {
+                 transition: 0.4s;
+        }
+
+        .accordion h2 {
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 45px;
+              border-bottom: 2px solid #fff;
+              margin-bottom: 10px;
+               white-space: nowrap; 
+        }
+
+        .accordion li .content {
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 right: 0;
+                 bottom: 0;
+                 z-index: 1;
+                 color: #fff;
+                 padding: 15px;
+                 background: inner-gardient (
+                    0deg,
+                    rgb(0 0 0 /70%)
+                    10%,
+                    rgb(255 255 255 / 0%)
+                 );
+                 opacity: 0;
+                 visibility: hidden;
+              }
+
+              .accordion:hover {
+                gap: 0;
+              }
+
+              .accordion li .content span {
+                position: absolute;
+                z-index: 3;
+                left: 50%;
+                bottom: 50%;
+                translate: -50%;
+                scale: 0.85;
+                visibility: hidden;
+                opacity: 0;
+            
+              }
+
+              .accordion li:hover {
+                flex: 0 1 260px;
+                scale: 1.1;
+                z-index: 10;
+                opacity: 1;
+
+              }
+
+              .accordion li:hover .content {
+                opacity: 1;
+                visibility: visible;
+
+              }
+
+              .accordion li:hover span {
+                 scale: 1;
+                 opacity: 1;
+                 visibility: visible;
+              }
+    </style>
+</head>
+
+<body>
+    <ul class="accordion">
+        <li>
+            <img src="./img/women-fashion.jpg">
+            <div class="content">
+                <span>
+                    <h2>Joya</h2>
+                    <p>Unknown</p>
+                </span>
+            </div>
+        </li>
+
+    
+        <li>
+            <img src="./img/men-fashion.jpg">
+            <div class="content">
+                <span>
+                    <h2>Jack</h2>
+                    <p>Unknown</p>
+                </span>
+            </div>
+        </li>
+
+
+    <li>
+        <img src="./img/steve.jpg">
+        <div class="content">
+            <span>
+                <h2>Steve</h2>
+                <p>Unknown</p>
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <img src="./img/jay.jpg">
+        <div class="content">
+            <span>
+                <h2>Jay</h2>
+                <p> Unknown</p>
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <img src="./img/sam.jpg">
+        <div class="content">
+            <span>
+                <h2>Sam</h2>
+                <p> Unknown</p>
+            </span>
+        </div>
+    </li>
+    </ul>
+
+
+    
+</body>
+</html>
