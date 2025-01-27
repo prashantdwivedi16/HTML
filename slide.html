@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        .carousel .carousel-indicators button{
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="carousel slide" data-bs-theme="dark" data-bs-ride="carousel" id="banners">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img height="300" src="./img/amazon-banner1.png" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <img height="300" src="./img/amazon-banner2.png" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <div style="height:300px" class="d-flex justify-content-center align-items-center">
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                            <button class="btn btn-danger"> Get Started <span class="bi bi-chevron-right"></span> </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img height="300" src="./img/amazon-banner3.png" class="w-100 d-block">
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+             <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+            <span class="carousel-control-next-icon"></span>
+       </button>
+       <div class="carousel-indicators">
+        <button h class="rounded rounded-circle  active" data-bs-slide-to="0" data-bs-target="#banners"></button>
+        <button class=" rounded-circle" data-bs-slide-to="1" data-bs-target="#banners"></button>
+        <button class="rounded-circle" data-bs-slide-to="2" data-bs-target="#banners"></button>
+        <button class="rounded-circle" data-bs-slide-to="3" data-bs-target="#banners"></button>
+       </div>
+    </div>
+    </body>
+</html>
