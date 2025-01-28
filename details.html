@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin-bottom: 10px;
+        }
+        .header{
+            font-weight: bold;
+        }
+        fieldset{
+            box-shadow: 5px 4px 2px gray;
+            margin-bottom: 40px;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+        }
+        legend{
+            width: 120px;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 2px 2px 2px  blueviolet;
+            border-radius: 10px;
+        }
+        h2{
+            font-size: 40px;
+            background-color: black;
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            box-shadow: 2px 2px 2px red;
+            border-radius: 20px;
+            font-family: sans-serif;
+            
+        }
+        details{
+            width: 150px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            text-align: center;
+        }
+        summary{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: monospace;
+            border: 5px solid black;
+            border-left: none;
+            border-right: none;
+            border-radius: 10px;
+        }
+        .terms{
+            width: 400px;
+            height: 300px;
+            border: 1px solid red;
+            padding: 20px;
+            overflow: auto;
+        }
+        p::first-letter{
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <h2 align="center">Resume</h2>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <div class="row">
+        <div class="header">First Name</div>
+        </div>
+        <div class="row">
+            <div class="header">Last Name</div>
+        </div>
+        <div class="row">
+            <div class="header">Father Name</div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Contact Details</legend>
+        <div class="row">
+            <div class="header">City</div>
+            <div>Some Name</div>
+        </div>
+        <div class="row">
+            <div class="header">State</div>
+            <div>Some Name</div>
+        </div>
+        <div class="row">
+            <div class="header">Postal code</div>
+            <div>Some Name</div>
+        </div>
+    </fieldset>
+    <nav>
+        <details open>
+            <summary>Electronics</summary>
+            <div>Television</div>
+            <div>Mobile</div>
+            <div>Watch</div>
+        </detail>
+        <details>
+            <summary>Fashion</summary>
+            <div>Kid's Fashion</div>
+            <div>Women's Fashion</div>
+            <div>Men's Fashion</div>
+        </details>
+    </nav>
+    <h3>Terms Of Services</h3>
+    <div class="terms">
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsa aspernatur voluptas atque dolore earum suscipit hic dicta deserunt, laudantium cumque, nisi veritatis accusamus corrupti reiciendis provident reprehenderit et enim!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, quaerat itaque reprehenderit totam fuga consequatur ullam aspernatur iste animi dignissimos, pariatur praesentium neque excepturi ex ipsum. Dicta non amet eum!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsa aspernatur voluptas atque dolore earum suscipit hic dicta deserunt, laudantium cumque, nisi veritatis accusamus corrupti reiciendis provident reprehenderit et enim!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, quaerat itaque reprehenderit totam fuga consequatur ullam aspernatur iste animi dignissimos, pariatur praesentium neque excepturi ex ipsum. Dicta non amet eum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsa aspernatur voluptas atque dolore earum suscipit hic dicta deserunt, laudantium cumque, nisi veritatis accusamus corrupti reiciendis provident reprehenderit et enim!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, quaerat itaque reprehenderit totam fuga consequatur ullam aspernatur iste animi dignissimos, pariatur praesentium neque excepturi ex ipsum. Dicta non amet eum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsa aspernatur voluptas atque dolore earum suscipit hic dicta deserunt, laudantium cumque, nisi veritatis accusamus corrupti reiciendis provident reprehenderit et enim!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, quaerat itaque reprehenderit totam fuga consequatur ullam aspernatur iste animi dignissimos, pariatur praesentium neque excepturi ex ipsum. Dicta non amet eum!</p>
+                    </div>
+            
+    </div>
+</body>
+</html>
