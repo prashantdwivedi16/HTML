@@ -1,303 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <title>ICC RANKING</title>
-    <style>
-        body{
-           
-            background-color: black;
-            color: green;
-        }
-        header{
-            padding: 10px;
-            border: 1px;
-            border-radius: 100px;
-            text-align: center;
-            font-size: 30px;
-            font-weight: bold;
-            color: black;
-            background-color: gray;
-                }
-        table{
-            font-family: arial;
-        }
-        .player{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .name{
-            font-size: 10px;
-        }
-        .surname{
-            font-weight: bold;
-            font-size: 12px;
 
-        }
-        .rank{
-            font-weight: bold;
-            font-size: 10px;
-        }
-        .rating{
-            font-weight: bold;
-            font-size: 10Px;
-        }
-        .caption{
-            font-size: 15px;
-            font-weight: bold;
-           
-        }
-       
-    </style>
+
+    <title>table</title>
 </head>
-<body>
-    <header>
-    <div>
-        <caption>ICC MEN'S BATSMAN RANKING </caption>
-    </div></header>
-    <table width="80%" border="0"  frame="void" cellspacing="30">
-        
-    
+<body><center>
+    <table border="3px"></br></br></br>
+        <caption> <b>student</b></caption>
         <tr>
-            <td>
-                <table border="0" rules="rows"  frame="box" width="100%" cellpadding="10">
-                    <thead>
-                        <tr>
-                            <td class="caption" colspan="3">TEST -BATSMAN RANKING</td>
-                        </tr>
-                    </thead>
-                    <thead>
-                        <th>Rank</th>
-                        <th>Player</th>
-                        <th>Rating</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <span class="rank">01 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/england.jpeg" width="30">
-                                    <span class="name"> Joe <div class="surname">ROOT</div></span>
-                                    
-                                </div>
-                            </td>
-                            <td class="rating">903</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">02 </span>
-                            </td>
-                            <td style="display: flex;">
-                                <div class="player">
-                                    <img src="./img/newzealand.png" width="30">
-                                    <span class="name"> Kane <span class="surname">WILLIAMSON</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">804</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">03 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/england.jpeg" width="30">
-                                    <span class="name"> Harry <span class="surname">BROOK</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">778</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">04 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/india.png" width="30">
-                                    <span class="name"> Yashasvi <span class="surname">JASHWAL</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">777</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">05 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/australia.png" width="30">
-                                    <span class="name"> Steve <span class="surname">SMITH</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">757</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            
+              <th>S.no</th>  
+              <th>Name</th>
+              <th>City</th>
+                <th>country</th>
 
-            <td>
-                <table border="0" rules="rows" frame="box" width="100%" cellpadding="10">
-                    <thead>
-                        <tr>
-                            <td class="caption" colspan="3">ODI - BATSMAN RANKINGS</td>
-                        </tr>
-                    </thead>
-                    <thead>
-                        <th>Rank</th>
-                        <th>Player</th>
-                        <th>Rating</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <span class="rank">01 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/pakistan.png" width="30">
-                                    <span class="name"> Babar <div class="surname">AJAM</div></span>
-                                </div>
-                            </td>
-                            <td class="rating">822</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">02 </span>
-                            </td>
-                            <td style="display: flex;">
-                                <div class="player">
-                                    <img src="./img/india.png" width="30">
-                                    <span class="name"> Rohit <span class="surname">SHARMA</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">765</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">03 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/india.png" width="30">
-                                    <span class="name">Shubman <span class="surname">GILL</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">763</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">04 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/india.png" width="30">
-                                    <span class="name">Virat <span class="surname"> KOHLI</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">746</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">05 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/airland.jpeg" width="30">
-                                    <span class="name">Harry <span class="surname"> TECTOR</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">262</td>
-                        </tr>
-                   
-                    </tbody>
-                </table>
-            </td>
-
-            <td>
-                <table border="0" rules="rows" frame="box" width="100%" cellpadding="10">
-                    <thead>
-                        <tr>
-                            <td class="caption" colspan="3">T20I - BATSMAN RANKINGS</td>
-                        </tr>
-                    </thead>
-                    <thead>
-                        <th>Rank</th>
-                        <th>Player</th>
-                        <th>Ranking</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <span class="rank">01 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/australia.png" width="30">
-                                    <span class="name">Travis <div class="surname">HEAD</div></span>
-                                </div>
-                            </td>
-                            <td class="rating">881</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">02 </span><span class="bi bi-dot"></span>
-                            </td>
-                            <td style="display: flex;">
-                                <div class="player">
-                                    <img src="./img/india.png" width="30">
-                                    <span class="name">Suryakumar <span class="surname"> YADAV</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">818</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">03 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/england.jpeg" width="30">
-                                    <span class="name">Phill <span class="surname"> SALT</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">800</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">04 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/pakistan.png" width="30">
-                                    <span class="name">Babar <span class="surname"> AJAM</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">755</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="rank">05 </span>
-                            </td>
-                            <td style="display: flex; justify-content: space-between;">
-                                <div class="player">
-                                    <img src="./img/pakistan.png" width="30">
-                                    <span class="name"> Mohammad <span class="surname"> RIZWAN</span></span>
-                                </div>
-                            </td>
-                            <td class="rating">746</td>
-                        </tr>
-                   
-                    </tbody>
-                </table>
-                </table>
-            </td>
+            
+            
         </tr>
+        <tr>
+            <td bgcolor="red">01</td>
+             <td bgcolor="yellow">aadrsh</td>
+                <td bgcolor="pink">lucknow</td>
+                   <td bgcolor="green">india</td>
+            
+        </tr>
+        <tr>
+            <td bgcolor="yellow">02</td>
+            <td bgcolor="purple">
+                shyam
+            </td>
+            <td bgcolor="orange">kanpur</td>
+            <td bgcolor="pink">india</td>
+        </tr>
+          <tr>
+            <td bgcolor="blue">
+                03
+            </td>
+            <td bgcolor="hotyellow">ronny</td>
+            <td bgcolor="pink">newyork</td>
+            <td bgcolor="orange">america</td>
+          </tr>
+          <tr>
+            <td bgcolor="green">04</td>
+             <td bgcolor="purple">jullie</td>
+               <td bgcolor="blue">seol</td>
+                  <td bgcolor="red">korea</td>
+          </tr>
+
     </table>
+</center>
 </body>
 </html>
